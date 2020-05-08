@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+ 
+main{
+    overflow-x: hidden;
+}
+.main-header{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#fde488;
+    z-index: 1;
+    position: fixed;
+}
+
+.main-header > div{
+    padding:1rem;
+}
+
+.main-header-brand{
+    text-decoration: none;
+    color:rgba(174,154,101,1);
+    font-weight:bold;
+    margin-left:4rem;
+}
+.main-header-brand > img{
+    height:1.5rem;
+    vertical-align: middle;
+}
+.main-nav-items{
+    display:flex;
+    list-style: none;
+    margin:0;
+}
+
+.main-nav-items > .main-nav-item{
+    cursor: pointer;
+    color:white;
+    font-size:1rem;
+    font-weight:300;
+    margin-right:1.5rem;
+    background-color: rgba(174,154,101,1);
+    padding:0.3rem 1.5rem;
+    border-radius:50px;
+}
+
+.main-header-brand:hover,
+.main-header-brand:active{
+    
+    color:rgba(96,94,94,1);
+}
+.main-nav-items > .main-nav-item:hover,
+.main-nav-items > .main-nav-item:active{
+    background-color:rgba(96,94,94,1);  
+    color:rgba(174,154,101,1);
+}
+
+main > #main-intro-page{
+    background: url(images/cupcakes.jpg) ;
+    background-size: cover;
+    background-position: 0% 75%;
+    height:85vh;
+    width:100vw;
+    position: relative;
+}
+#main-intro-page > .headings{
+    color:#2c3e50;
+    position:absolute;
+    left:5%;
+    top:30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#overview{
+    background:url(images/landscape.jpg);
+    background-size:cover;
+    background-position: center center;
+    width:100vw;
+    height:80vh;
+}
+.headings > .heading{   
+    font-size:3rem;
+    margin-bottom:1rem;
+    font-family:"Playfair Display",ssans-serif;
+}
+
+.slight-border{
+    width:160px;
+    height:20px;
+    border-top:1px solid rgba(96,94,94,1);
+}
+.headings > .heading-detail{
+    font-size:1rem;
+    margin-bottom:2rem;
+    line-height: 1.2rem;
+}
+.heading-detail > span{
+    display:block;
+    text-align: center;
+}
+
+.headings > .heading-button{
+    text-decoration: none;
+    color:white;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    padding:0.5rem 1rem;
+    background-color:rgba(174,154,101,1);
+}
+
+.headings > .heading-button:hover,
+.heading > .heading-button:active{
+    background-color:rgba(96,94,94,1);  
+    color:rgba(174,154,101,1);
+}
+.overview-info{
+    display:flex;
+}
+.info-item{
+    text-align: center;
+    color:rgba(174,154,101,1);
+    width:33%;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom:3rem;
+}
+.overview-detail{
+    display:flex;
+    justify-content: space-around;
+}
+.overview-detail > article{
+    width:13%;
+    height:40vh;
+    background-color: rgba(174,154,101,1);
+    margin-top:3rem;
+}
+.paragraph-detail{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+article > h1{
+    color:white;
+}
+article > .sub-heading{
+    font-weight:300;
+    font-size:0.8rem;
+}
+
+article > .slight-border{
+    width:130px;
+    height:20px;
+    border-top:0.5px solid white;
+}
+article > .detail{
+    color:white;
+    font-size:0.9rem;
+    line-height: 1.5;
+    font-weight:100;
+
+}
+
+article > .footer{
+    margin-top:1rem;
+    font-size:0.6rem;
+    color:rgba(96,94,94,1);
+}
+.list-detail{
+    display: flex;
+}
+article > ul{
+    color:rgba(96,94,94,1);
+    font-weight:300;
+    width:100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.detail-items > .detail-item{
+    list-style:none;
+}
+.detail-items > .slight-border{
+    width:40%;
+    height:1%;
+    border-top:0.5px solid white;
+}
+
+#cake-gallery{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+figure{
+    width:33.33%;
+}
+figure > img{
+    width:100%;
+    height:100%;
+}
+
+.heading{
+    position:relative;
+}
+figure > h1{
+    position:absolute;
+    color:  rgba(174,154,101,1);
+    left:40%;
+    top:10%;
+    font-family: 'Playfair Display', serif;
+}
+figure > span{
+    position: absolute;
+    color:  rgba(96,94,94,1);
+    left:20%;
+    top:25%;
+    text-transform: uppercase;
+    font-weight:200;
+}
+
+figure > p{
+    position:absolute;
+    color:  rgba(96,94,94,1);
+    width:45%;
+    top:40%;
+    left:30%;
+    font-weight:200;
+}
+
+.main-footer {
+    background: black;
+    padding: 2rem;
+}
+@media(max-width:90rem){
+    .overview-detail > article{
+        width:20%;
+    }
+}
+@media(max-width:50rem){
+    .overview-detail > article{
+        width:20%;
+    }
+    figure > h1{
+        font-size:0.9rem;
+    }
+    figure > p{
+        display:none;
+    }
+}
+@media(max-width:40rem){
+    .overview-info{
+        padding-top:2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-item{
+        width:100%;
+    }
+    .info-item > h1{
+        margin-bottom:1rem;
+    }
+    main > #main-intro-page{
+        background-position: left;
+    }
+    #overview{
+        height:100%;
+    }
+    .overview-detail{
+        flex-direction:column;
+        align-items: center;
+    }
+    .overview-detail > article{
+        width:40%;
+    }
+    figure > h1{
+        font-size:0.7rem;
+    }
+    figure > span{
+        font-size:0.5rem;
+    }
+    figure > p{
+        display:none;
+    }
+}
+

@@ -1,0 +1,16 @@
+i{
+    margin-left:20px;
+}
+.hero{
+    margin-bottom: 100px;
+}
+.input{
+    max-width: 70%;
+}
+.button{
+    margin:5px;
+}
+label{
+    font-size:2em;
+    line-height: 50px;
+}

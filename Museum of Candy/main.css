@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    overflow-x:hidden;
+}
+.welcome-bar{
+    width:100%;
+    background-color:#ff6b81;
+    text-align:center;
+    padding:1.2rem;
+    color:white;
+    font-weight:300;
+    text-transform: capitalize;
+    font-size:1.5rem;
+    box-shadow:0 0 0.2rem 0.2rem rgba(0,0,0,0.15);
+}
+.main-header-hearts > .fa-heart{
+    font-size:1.5rem;
+    vertical-align: middle;
+    color:#eb2f06;
+    margin:4px;
+}
+
+
+.main-header{
+    width:100vw;
+    height:100vh;
+    background-color: #FDA7DF;
+}
+.main-header-brand{
+    display:none;
+    margin:3rem;
+    font-size:2rem;
+    font-weight:400;
+    text-transform: uppercase;
+}
+.main-header-brand > a{
+    text-decoration: none;
+    color:#ED4C67;
+}
+.main-nav{
+    display: none;
+}
+
+.main-nav-item{
+    display: inline-block;
+    padding:2rem;
+    font-size:2rem;
+}
+.main-nav-item > a{
+    text-decoration: none;
+    color:white;
+    font-weight:400;
+}
+
+.main-nav-item > a:hover,
+.main-nav-item > a:active{
+    color:#9b59b6;
+}
+
+.intro-image-container{
+    width:100%;
+}
+.intro-image{
+    width:100%;
+    max-width:70rem;
+    height:35vh;
+}
+.intro-page > .intro-heading{   
+    width:100%;
+    vertical-align: middle;
+    font-size:1.3rem;
+    text-align: center;
+    color:white;
+    line-height:2;
+}
+.intro-heading > h1{
+    font-weight:300;
+}
+h1 > span{
+    color:#ff6b81;
+}
+
+
+@media (min-width:60rem){
+    .main-header-brand{
+        display: inline-block;
+    }
+    .main-nav{
+        display:inline-block;
+    }
+    .intro-page > .intro-heading{
+        text-align: left;
+        margin:2rem;
+        width:40%;
+        font-size:1rem;
+        display: inline-block;
+    }
+    .intro-image-container{
+        width:52.5%;
+        display:inline-block;
+        vertical-align: middle;
+    }
+    .intro-image{
+        width:100%;
+        height:45vh;
+        max-width: 70rem;
+    }
+    
+}
+@media (min-width:95rem){
+    .main-header-brand{
+        display: inline-block;
+    }
+    .main-nav{
+        display:inline-block;
+    }
+    .intro-page > .intro-heading{
+        text-align:center;
+        display:inline-block;
+        width:30%;
+        margin:10rem;
+        position: absolute;
+        left:10%;
+        font-size:1.3rem;
+    }
+    .intro-image-container{
+        width:50%;
+        display:inline-block;
+        vertical-align: middle;
+    }
+    .intro-image{
+        width:100%;
+        position: absolute;
+        top:30%;
+        left:60%;
+        height:55vh;
+        max-width: 60rem;
+    }
+}
+
