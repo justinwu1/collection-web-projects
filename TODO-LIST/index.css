@@ -1,0 +1,79 @@
+body{
+background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family:'Open Sans',sans-serif
+}
+#warning{
+    color:#FFC107;
+    text-align:center;
+}
+h1{
+    color:white;
+    margin:20px 0px 0px 20px;
+    padding:10px 20px;
+    font-weight:100;
+}
+li{
+    margin:20px 0;
+    height:40px;
+    line-height: 30px;
+    color:white;
+    word-break:break-all;
+}
+.fa-trash{
+    background:white;
+    color:#f32013;
+    
+}
+
+#task{
+    font-size:20px;
+    width:100%;
+    padding:13px 13px 13px 20px;
+    box-sizing: border-box;
+    color:#1c92d2;
+    margin:25px 0;
+}
+input:focus{
+    background:white;
+    border:3px solid #1c92d2;
+    outline:none;
+}
+.container{
+    width:360px;
+    height:600px;
+    margin:10% auto;
+    box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+.fa-edit{
+    background:gray;
+    color:black;
+    margin-right:10px;
+}
+.fa-check{
+    color:#1c92d2;
+}
+ul{
+    list-style-type: none;
+    margin-left:10px;
+    padding:0;
+}
+.btn-primary{
+    margin-left:3px;
+}
+i{
+    padding:10px;
+}
+.crossOut{
+    color:gray;
+    text-decoration:line-through;
+}
+.fillOut::-webkit-input-placeholder {
+    color: red;
+ }
+.hide {
+    opacity: 0;
+    transition: opacity 1000ms;
+  }
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/5369d84656.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h3 id = 'warning'>
+        <i class="fas fa-exclamation-triangle"></i>
+        Warning: This To-Do App Contains Sound Effect
+    </h3>
+    <audio >
+        <source src = "killer.mp3" type = "audio/mp3" > 
+    </audio>
+    <audio >
+        <source src = "Eraser.mp3" type = "audio/mp3" >
+    </audio>
+    <audio >
+        <source src = "Idea.mp3" type = "audio/mp3" >
+    </audio>
+    <audio >
+        <source src = "Delete.mp3" type = "audio/mp3" >
+    </audio>
+    <div class = "container">
+        
+        <h1>TO-DO List</h1>
+        <input id = "task"placeholder="Add a new Task" type="text">
+        <button type="button" class="btn btn-primary">Add</button>
+        <button type="button" class="btn btn-success float-right" disabled>Edit</button>
+        <ul>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>
